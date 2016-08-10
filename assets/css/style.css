@@ -1,3 +1,4 @@
+/* top of this file are the styles uneffected by media queries */
 
 html, body {
   height: 100%;
@@ -6,6 +7,7 @@ html, body {
   font-family: "sofia-pro-soft",sans-serif;
   font-weight: lighter;
   box-sizing: border-box;
+  font-size: 1em;
 }
 
 *, *:before, *:after {
@@ -24,111 +26,53 @@ p {
   z-index: 2;
 }
 
-.menubar-inner {
-  padding-top: 28px;
-  padding-left: 4%;
-  padding-right: 16%;
-  padding-bottom: 35px;
-}
-
-.menubar--mainnav {
-  border-top: 2px solid #070;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.menubar--mainnav li {
-  display:inline-block;
-  width: 23%;
-  text-align: center;
-}
-
-.menubar--mainnav li:first-child {
-  text-align: left;
-}
-
-.menubar--mainnav li:last-child {
-  text-align: right;
-}
-
-
-.menubar--mainnav a {
-  font-size: 24px;
-  font-size: 2.6vw;
-  color: #787878;
-  text-decoration: none;
-}
-
 .menubar--logo {
   background-image: url(img/sas_logo.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
   display: inline-block;
-  width: 35%;
-  padding-top: 10%;
+}
+
+.menubar--mainnav {
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menubar--mainnav li {
+  display:inline-block;
+}
+
+.menubar--mainnav a {
+  color: #787878;
+  text-decoration: none;
 }
 
 .content {
-  font-size: 26px;
-  line-height: 30px;
   color: #FFF;  
   text-align: center;
 }
 
 .content-top {
-  padding-top: 23%;
   background-color: #9CD2D7;
-/*  background-image:url("img/content-top-bg.gif");
-  background-repeat:no-repeat;
-  background-position:left bottom;*/
-}
-
-.content-top p {
-  margin: 0 10px 19px 10px;
 }
 
 .content-bottom {
-  background-color: #79C3BF;
-  background-image:url("img/content-top-bg.png");
-  background-repeat:no-repeat;
-  background-position:left top;  
-  background-size: 100%;
-  padding-bottom: 175px;
+  background-color   : #79C3BF;
+  background-image   : url("img/content-top-bg.png");
+  background-repeat  : no-repeat;
+  background-position: left top;  
+  background-size    : 100%;
+  padding-bottom     : 175px;
 }
 
-.content-inner {
-
-  margin: auto;
-}
-
-.content-inner-top {
-  margin-top: 235px;
-}
-
-.content-inner-bottom {
-  padding-top: 300px;
-}
 
 hr.content-divider {
-  height: 3px;
-  border: 0;
+  height          : 2px;
+  border          : 0;
   background-color: #fff;
-  color: #fff;
-}
-hr.content-divider-top {
-  margin: 78px 0 83px 0;
-}
-
-.content-54px {
-  font-size: 54px;
-}
-
-.content-36px {
-  font-size: 36px;
+  color           : #fff;
 }
 
 .content-lineheight66px {
@@ -141,6 +85,7 @@ hr.content-divider-top {
   background-color: #9CD2D7;
 }
 
+/* svg down arrow graphics */
 .down_arrow {
   width: 115px;
   height: 115px;
@@ -159,41 +104,12 @@ hr.content-divider-top {
 }
 
 .spacer {
-  height: 100px;
+  height: 38px;
 }
 
-.homepage_buttons {
-  margin-top: 160px;
-  padding-bottom: 143px;
-  margin-left: 45px;
-}
-
-.button_container {
-  height: 150px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.button_container img {
-  width: 150px;
-  height: 150px;
-}
-
-.button_text {
-  position: relative;
-  top: -35px;
-  left: 35px;
-  display: inline-block;
-  height: 150px;
-}
-
-.homepage_buttons p {
-  font-size: 20px;
-  line-height: 21px;
-}
 
 .content-searchbar {
-  background-color: #b6e1df;
+  background-color: #22A09E;
   background-image:url("img/content-bottom-bg.png");
   background-repeat:no-repeat;
   background-position:left top;  
@@ -204,11 +120,10 @@ hr.content-divider-top {
   -webkit-appearance: textfield;
   display: block;
   width: 100%;
-  height: 90px;
   font-size: 50px;
   border-radius: 30px;
   border: none;
-  background-color: #D4E6E6;
+  background-color: #ABCFCF;
   color: #fff;
   text-align: center;
 }
@@ -217,70 +132,208 @@ hr.content-divider-top {
   color: white;
 }
 
-/*@media only screen and (min-width : 320px) {
-    
+
+
+/* ------------------------------------------- */
+
+/* below 380px wide styles */
+
+.menubar-inner {
+  padding: 28px 14% 35px 4%;
 }
-*/
-/* Extra Small Devices, latest Phones */ 
-@media only screen and (min-width : 400px) {
+
+.menubar--mainnav {
+  border-top: 2px solid #070;
+  margin: 0;
+  padding: 0;
+}
+
+.menubar--mainnav li {
+  width: 27%;
+  text-align: center;
+}
+
+.menubar--mainnav li:first-child {
+  text-align: left;
+  width: 21%;
+}
+
+.menubar--mainnav li:last-child {
+  text-align: right;
+  width: 20%;
+}
+
+.menubar--mainnav a {
+  font-size: 3.2vw;
+}
+
+.menubar--logo {
+  width: 35%;
+  padding-top: 10%;
+}
+
+/* - */
+
+.content-top {
+  padding-top: 23%;
+}
+
+.content-top p {
+  font-size: 6vw;
+  margin-bottom: 19px;
+}
+
+.content-inner {
+  margin: auto;
+}
+
+.content-inner-top {
+  width     : 80%;
+  margin-top: 130px;
+}
+
+hr.content-divider-top {
+  margin: 36px 0 53px 0;
+}
+
+.content-xl {
+  display      : block;
+  font-size    : 11vw;
+  line-height  : 15vw;
+  margin-bottom: 10px;
+}
+
+.content-lg {
+  font-size    : 8vw;
+}
+
+.content-lgp {
+  font-size    : 10vw;
+}
+
+.content-inner-bottom {
+  padding-top: 122px;
+}
+
+/* - */
+
+.homepage_buttons {
+  margin-top    : 75px;
+  padding-bottom: 143px;
+  margin-left   : 35px;
+}
+
+.button_container {
+  text-align   : left;
+  margin-bottom: 30px;
+}
+
+.button_container img {
+  width : 65px;
+  height: 65px;
+  vertical-align: top;
+}
+
+.button_text {
+  display    : inline-block;
+  max-width  : 152px;
+  font-size  : 6vw;
+  margin-left: 10px
+}
+
+.homepage_buttons p {
+  font-size: 4vw;
+  line-height: 21px;
+}
+
+.content-searchbar {
+  padding: 0 35px;
+}
+
+.localservices-search {
+  height: 45px;
+  font-size: 8vw;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
   .menubar-inner {
-    padding-right: 8%;
+    padding-right: 5%;
   }
+
+  .menubar--mainnav a {
+    font-size: 3.5vw;
+  }
+
+  .menubar--mainnav li {
+    width: 24%;
+    text-align: right;
+  }
+
+  .menubar--mainnav li:first-child {
+    width: 27%;
+  }
+
+  .menubar--mainnav li:last-child {
+    width: 20%;
+  }
+
 }
+
+/* ------------------------------------------- */
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
 }
 
+/* ------------------------------------------- */
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
   .menubar--mainnav {
+    display       : inline-block;
+    margin-top    : 19px;
+    margin-left   : 8%;
+    border-top    : 0px;
     vertical-align: top;
-    border-top: 0px;
-    display: inline-block;
-    margin-top: 19px;
   }
 
   .menubar-inner {
     padding-bottom: 13px;
   }
 
-
   .menubar--logo {
-    width: 16%;
-    padding-top: 5%;
-  }
-
-  .menubar--mainnav {
-    margin-left: 8%;
+    padding-top : 5%;
+    width       : 16%;
   }
 
   .menubar--mainnav li {
-    width: 41%;
-    text-align: center;
+    width      : 41%;
+    text-align : center;
   }
 
   .menubar--mainnav a {
-    font-size: 42px;
-    font-size: 1.68vw;
+    font-size : 1.68vw;
   }
 
-
+  /* - */
 
   .content {
-    font-size: 51px;
+    font-size  : 51px;
     line-height: 53px;    
   }
 
   .content-top {
-      padding-top: 1%;
+    padding-top: 1%;
   }
 
   .content-inner-top {
     margin-top: 300px;
-    max-width: 1117PX;
+    max-width : 1117PX;
   }
 
   .content-inner {
@@ -288,52 +341,56 @@ hr.content-divider-top {
   }
 
   .content-top p {
-      margin-bottom: 48px;
+    margin-bottom: 48px;
   }
 
   hr.content-divider-top {
-      margin: 78px 0 97px 0;
+    margin: 78px 0 97px 0;
   }
 
-  .content-54px {
-      font-size: 86px;
+  .content-xl {
+    font-size: 86px;
   }
 
-  .content-36px {
+  .content-lg {
     display: none;
   }
 
   .content-unhelpful {
-    font-size: 72px;
+    font-size  : 72px;
     margin-left: -38px;
   }
 
+  /* - */
+
   .homepage_buttons {
-      margin-top: 178px;
-      margin-left: 35px;
+    margin-top : 178px;
+    margin-left: 35px;
   }
 
   .button_container {
-    height: 219px;
+    display      : inline-block;
     margin-bottom: 30px;
-    display: inline-block;
-    width: 680px;
+    height       : 219px;
+    width        : 680px;
   }
 
   .button_container img {
-    width: 219px;
+    width :  219px;
     height: 219px;
   }
 
   .button_text {
-      margin-left: 15px;
-      display: inline-block;
-      height: 150px;
-      top: -53px;
-      max-width: 400px;
+    display    : inline-block;
+    top        : -53px;
+    margin-left: 15px;
+    height     : 150px;
+    max-width   : 400px;
   }
 
 }
+
+/* ------------------------------------------- */
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
