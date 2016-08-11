@@ -139,7 +139,7 @@ hr.content-divider {
 /* below 380px wide styles */
 
 .menubar-inner {
-  padding: 28px 14% 35px 4%;
+  padding: 28px 5% 20px 4%;
 }
 
 .menubar--mainnav {
@@ -237,13 +237,13 @@ hr.content-divider-top {
 .button_text {
   display    : inline-block;
   max-width  : 152px;
+  max-width  : 53%;  
   font-size  : 6vw;
   margin-left: 10px
 }
 
 .homepage_buttons p {
   font-size: 4vw;
-  line-height: 21px;
 }
 
 .content-searchbar {
@@ -280,12 +280,123 @@ hr.content-divider-top {
     width: 20%;
   }
 
+  .button_text {
+    max-width  : 66%;
+  }
+
 }
 
 /* ------------------------------------------- */
 
-/* Small Devices, Tablets */
+/* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
+
+  .menubar-inner {
+      padding-left: 10%;
+      padding-right: 14%;
+  }
+
+  .menubar--logo {
+    width: 27%;
+    padding-top: 10%;
+  }
+
+  .menubar--mainnav li {
+    text-align: left;
+  }
+
+  .menubar--mainnav li:first-child {
+    width: 30%;
+  }
+
+  .menubar--mainnav a {
+      font-size: 2.5vw;
+  }
+
+  .menubar--mainnav {
+    padding-top: 15px;
+  }
+
+/*  .menubar--mainnav {
+    display       : inline-block;
+    margin-top    : 19px;
+    margin-left   : 8%;
+    border-top    : 0px;
+    vertical-align: top;
+  }
+*/
+
+  .content-inner-top {
+    width: 64%;
+    margin-top: 157px;
+/*    max-width : 1117PX;*/
+  }
+
+  .content-top p {
+      font-size: 3vw;
+      margin-bottom: 19px;
+  }
+
+  .content-xl {
+    font-size: 5.5vw;
+    line-height: initial;
+  }
+  
+  .content-unhelpful {
+    font-size: 4.9vw;
+  }
+  
+  .content-lg {
+    font-size: 3.5vw;
+  }
+
+  .content-lgp {
+    font-size: 4.5vw;
+  }
+
+  .content-inner-bottom {
+    padding-top: 180px;
+  }
+
+
+  /* -- */
+
+  .button_container {
+    display: inline-block;
+    min-width: 49%;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .homepage_buttons {
+    margin: 75px auto 0 auto;
+    width: 550px;
+    padding-bottom: 25px;
+  }
+
+  .homepage_buttons p {
+    font-size: 1.5vw;
+  }
+  .button_text {
+    display   : block;
+    max-width  : 45%;
+    font-size  : 2vw;
+    margin-top : 10px;
+    margin-left: 28%;
+    text-align : center;
+
+  }
+
+  .button_container img {
+      width : 85px;
+      height: 85px;
+  }
+
+  .localservices-search {
+    font-size: 5vw;
+    width    : 85%;
+    margin   : auto;
+  }
 
 }
 
@@ -297,13 +408,13 @@ hr.content-divider-top {
   .menubar--mainnav {
     display       : inline-block;
     margin-top    : 19px;
-    margin-left   : 8%;
+    margin-left   : 10%;
     border-top    : 0px;
     vertical-align: top;
   }
 
   .menubar-inner {
-    padding-bottom: 13px;
+      padding: 28px 5% 20px 4%;
   }
 
   .menubar--logo {
@@ -312,7 +423,7 @@ hr.content-divider-top {
   }
 
   .menubar--mainnav li {
-    width      : 41%;
+    width      : 46%;
     text-align : center;
   }
 
@@ -324,7 +435,6 @@ hr.content-divider-top {
 
   .content {
     font-size  : 51px;
-    line-height: 53px;    
   }
 
   .content-top {
@@ -332,8 +442,8 @@ hr.content-divider-top {
   }
 
   .content-inner-top {
-    margin-top: 300px;
-    max-width : 1117PX;
+    margin-top: 180px;
+    max-width : 575PX;
   }
 
   .content-inner {
@@ -341,15 +451,16 @@ hr.content-divider-top {
   }
 
   .content-top p {
-    margin-bottom: 48px;
+    margin-bottom: 22px;
+    font-size    : 2.8vw;
   }
 
   hr.content-divider-top {
-    margin: 78px 0 97px 0;
+    margin: 35px 0 9px 0;
   }
 
   .content-xl {
-    font-size: 86px;
+    font-size: 5vw;
   }
 
   .content-lg {
@@ -357,27 +468,37 @@ hr.content-divider-top {
   }
 
   .content-unhelpful {
-    font-size  : 72px;
+    font-size  : 4.6vw;
     margin-left: -38px;
   }
+
+
+  .content-inner-bottom {
+    padding-top: 292px;
+  }
+
 
   /* - */
 
   .homepage_buttons {
-    margin-top : 178px;
-    margin-left: 35px;
+    margin-top    : 78px;
+    margin-left   : 5%;
+    width         : 90%;
+    padding-bottom: 0;
   }
 
   .button_container {
     display      : inline-block;
     margin-bottom: 30px;
-    height       : 219px;
-    width        : 680px;
+    height       : 141px;
+    width        : 31%;
+    min-width    : initial;
+    text-align   : left;
   }
 
   .button_container img {
-    width :  219px;
-    height: 219px;
+    width : 97px;
+    height: 97px;
   }
 
   .button_text {
@@ -385,7 +506,15 @@ hr.content-divider-top {
     top        : -53px;
     margin-left: 15px;
     height     : 150px;
-    max-width   : 400px;
+    max-width  : 56%;
+    text-align : left;
+  }
+
+  .localservices-search {
+      font-size: 4vw;
+      width : 85%;
+      height: 50px;
+      margin: auto;
   }
 
 }
