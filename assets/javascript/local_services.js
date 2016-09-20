@@ -55,6 +55,7 @@ function addMarker(service) {
     var count = infowindows.length; // we brute force close all windows before we open another one
     for(var i=0; i<count;i++) {infowindows[i].close();}
     infowindow.open(map, marker);
+    // hideBackLink();
     showDetails(index);
     map.panTo(e.latLng);
     map.setZoom(11);
@@ -116,6 +117,13 @@ function showSearchResults() {
   $('#js_search_results').show();
 }
 
+function hideBackLink() {
+  $('#js_service_back_link').hide();
+}
+
+function showBackLink() {
+  $('#js_service_back_link').show();
+}
 
 function doJSONSearch(term) {
   var results = [];
@@ -149,10 +157,12 @@ function displaySearchResults(results) {
 }
 
 function showDetailsFromResults(index) {
+
   map.panTo(markers[index].position);
   map.setZoom(11);
   new google.maps.event.trigger( markers[index], 'click' );
   showDetails(index);
+
 }
 
 function getGeoCode(term) {

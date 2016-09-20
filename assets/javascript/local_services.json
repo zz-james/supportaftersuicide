@@ -2318,7 +2318,7 @@ var LOCAL_SERVICES = [
     "Type of Bereavement Support": "General Bereavement Support",
     "Description": "Church-based project providing support, information, away days, telephone support, family sessions, lending library etc for bereaved children aged 4-18 and their parents. Open to residents of the City of Edinburgh and Midlothian areas.",
     "Primary Street": "Richmond Craigmillar Church 227 Niddrie Mains Road",
-    "Primary City": "",
+    "Primary City": "Edinburgh",
     "Primary County": "",
     "Primary Postal Code": "EH16 4PA",
     "Latitude": 55.933035,
