@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <title>Support After Suicide : Local Services</title>
+    <meta name="description" content="Supporting those affected by suicide">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://use.typekit.net/vgu8hwv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+    
+  <body>
+    
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+    <div id="menu" class="menubar">
+      <div class="menubar-inner">
+        <a href="/#start" class="menubar--logo"></a>
+        <ul class="menubar--mainnav">
+          <li><a href="/local_services.html">Local Services</a></li>
+          <li><a href="/yourstories.html">&nbsp;Your Stories</a></li>
+          <li><a href="/whoweare.html">Who We Are</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="left_col" class="map_leftCol">
+        <div class="spacer"></div>
+        <input type=search name=s class="localservices-search" placeholder="search for a local service..." id="js_searchbar">
+        <div class="spacer"></div>
+
+
+        <!-- card for search result -->
+        <div class="search_results" id="js_search_results"></div>
+        <!-- end card for search result -->
+
+
+        <!-- card for service detail -->
+        <div class="service_details" id="js_services" style="opacity: 0;">
+          <a href='#' onclick="hideDetails();showSearchResults();"><< Back to search results..</a>
+          <h3 class="service_details__name" id="js_service_name"><h3>
+          <div>
+            <span id="js_service_address"   class="service_details__address"></span><br/>
+            <span id="js_service_website"   class="service_details__website"></span><br />
+            <span id="js_service_telephone" class="service_details__telephone"></span><br />
+           <!--  <span id="js_service_email"     class="service_details__email">E-Mail: hq@petesdragons.org.uk</span> -->
+          </div>
+          
+          <h3 class="service_details__header">Overview.<h3>
+          <span id="js_service_overview"     class="service_details__overview"></span> <br />
+          <h3 id="js_service_details__header" class="service_details__header">Services available.<h3>
+          <div id="js_service_services" class="service_details__overview"></div>
+
+        </div>
+        <!-- end card for service detail  -->
+
+
+
+
+
+    </div>
+
+      <div id="map"><span class="loading">loading tiles...</span></div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+ 
+      <script src="assets/javascript/local_services.js"></script>
+      <script src="assets/javascript/local_services.json"></script>
+
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAuQNImG39ziZAsfGRa8CBalU2ZbK5KN4A&callback=initMap"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        // e.src='//www.google-analytics.com/analytics.js';
+        // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        // ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+    </body>
+</html>

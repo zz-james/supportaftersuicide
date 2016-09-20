@@ -2,9 +2,11 @@
 <html>
 
   <head>
-    <title>Support After Suicide</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <title>Support After Suicide : Home</title>
+    <meta name="description" content="Supporting those affected by suicide">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://use.typekit.net/vgu8hwv.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -14,12 +16,12 @@
 
     <div id="menu" class="menubar">
       <div class="menubar-inner">
-        <a href="/" class="menubar--logo"></a>
+        <a href="/#start" class="menubar--logo"></a>
         <ul class="menubar--mainnav">
-          <li><a href="/">Local Services</a></li>
-          <li><a href="/">&nbsp;Your Stories</a></li>
-          <li><a href="/">Who We Are</a></li>
-          <li><a href="/">Contact</a></li>
+          <li><a href="/local_services.html">Local Services</a></li>
+          <li><a href="/yourstories.html">&nbsp;Your Stories</a></li>
+          <li><a href="/whoweare.html">Who We Are</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -35,12 +37,14 @@
           <span class="content-lg">Scroll down to begin.</span>
 
           <div class="spacer"></div>
+          <a href="#start">
           <svg class="down_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115">
             <title>down_arrow</title>
             <circle   class="cls-1" cx="55" cy="55" r="50" />
             <line     class="cls-2" x1="55" y1="25" x2="55" y2="85"/>
             <polyline class="cls-2" points="35 65   55 85  75 65"/>
           </svg>
+          </a>
           <div class="spacer"></div>
 
 
@@ -50,41 +54,53 @@
      <!-- <img class="img--divider" src="assets/css/img/content-top-bg.gif" /> -->
 
       <div class="content-bottom">
-        <div class="content-inner content-inner-bottom">
+        <div class="content-inner content-inner-bottom" id="start">
           <span class="content-xl content-lineheight66px content-unhelpful">
             Choose from the topics below
           </span>
 
           <div class="homepage_buttons">
             <div class="button_container">
-              <img src="assets/images/button_bereaved.png" />
-              <div class="button_text">I'm Bereaved<p>Advice and support if you are bereaved</p>
-              </div>
+              <a href="bereaved.html" class="no_decoration">
+                <img src="assets/images/button_bereaved.png" />
+                <div class="button_text">I'm Bereaved<p>Advice and support if you are bereaved</p>
+                </div>
+              </a>
             </div>
             <div class="button_container">
+            <a href="someoneelse.html" class="no_decoration">
               <img src="assets/images/button_someoneelse.png" />
               <div class="button_text">Helping Someone Else<p>Supporting someone else.</p>
               </div>
+              </a>
             </div>
             <div class="button_container">
-              <img src="assets/images/button_didnt_know.png" />
-              <div class="button_text">I Didn't Even Know The Person<p>How you may be feeling. You are not alone.</p>
-              </div>
+              <a href="didntknow.html" class="no_decoration">
+                <img src="assets/images/button_didnt_know.png" />
+                <div class="button_text">I Didn't Even Know The Person<p>How you may be feeling. You are not alone.</p>
+                </div>
+              </a>
             </div>
             <div class="button_container">
-              <img src="assets/images/button_practical_support.png" />
-              <div class="button_text">Practical Support<p>What will happen, forms, who to inform</p>
-              </div>
+              <a href="practical.html" class="no_decoration">
+                <img src="assets/images/button_practical_support.png" />
+                <div class="button_text">Practical Support<p>What will happen, forms, who to inform</p>
+                </div>
+              </a>
             </div>
             <div class="button_container">
-              <img src="assets/images/button_whattosay.png" />
-              <div class="button_text">What to Say?<p>Advice on what to say to people affected by suicide.</p>
-              </div>
+              <a href="whattosay.html" class="no_decoration">
+                <img src="assets/images/button_whattosay.png" />
+                <div class="button_text">What to Say?<p>Advice on what to say to people affected by suicide.</p>
+                </div>
+              </a>
             </div>
             <div class="button_container">
-              <img src="assets/images/button_download.png" />
-              <div class="button_text">Download A Support Guide<p>Scotland/ Wales/ UK.</p>
-              </div>
+              <a href="download.html" class="no_decoration">
+                <img src="assets/images/button_download.png" />
+                <div class="button_text">Download A Support Guide<p>Scotland/ Wales/ UK.</p>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -111,7 +127,10 @@
       <!-- <img class="img--divider" src="assets/css/img/content-bottom-bg.gif" /> -->
 
     </div><!-- close content -->
-
+ 
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+      <script src="assets/javascript/utils.js"></script>
   </body>
 </html>
 
